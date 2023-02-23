@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Lobster&family=Montserrat:wght@200;400&family=PT+Sans+Narrow&family=Poppins&family=Raleway&family=Source+Sans+Pro:wght@300&family=Spirax&display=swap');
+p{
+  font-size: 20px;
+  margin: 20px;
+  font-weight: 250;
+}
+
+span{
+  font-weight: bold;
+}
+
+.allTabs{
+  width: 80%;
+  margin: 0 auto 2rem;
+  align-items: center;
+  border: 2px solid #ee7cff;
+  border-radius: 5px;
+}
+
+.react-tabs__tab:first-child {
+  border-top-left-radius: 5px;
+}
+ 
+.react-tabs__tab:last-child {
+  border-top-right-radius: 5px;
+}
+
+.react-tabs__tab {
+  display: inline-block;  
+  width: 20%;
+  padding: 1rem;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  color: whitesmoke;
+  font-weight: 500;
+  background-color: #202020;
+  font-size: 20px;  
+  transition: 0.5s all ease; 
+}
+
+.react-tabs__tab:hover{
+  filter: brightness(200%);
+}
+ 
+.react-tabs__tab--selected {
+  background: linear-gradient(245.39deg, #FC65ED -35.14%, #0500FF 143.06%);
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+ 
+.react-tabs__tab-panel--selected {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.beerImg{
+  width: 300px;
+  height: 720px;
+  object-fit: contain;
+  text-align: center;
+  margin-left: 30px;
+  transition: all 0.3s ease-in-out 0s; 
+}
+
+.img{
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.img:hover{
+    transition: 0.9s;
+    transform: rotateY(180deg);
+}
+
+.beerInfo{
+  margin-top: 30px;
+}
+
+.beerName{
+  color:#FC65ED;
+}
+
+.tagline {
+  font-family: 'Crimson Text', serif ;
+}
+
+.description{
+  background-color: hsl(306, 82%, 76%);
+  margin: 0px auto;
+  border-radius: 20px;
+  width: 360px;
+  height: 300px;
+  padding: 10px;
+  font-size: 19px;
+  font-style: italic;
+  text-align: center;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  padding: 5px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.tip{
+  width: 70%;
+  text-align: center;
+  margin: 15px auto;
+}
+
+@media screen and (min-width: 1025px) and (max-width:1316px) {
+  .beerName{
+    font-size: 38px;
+  }
+
+  .react-tabs__tab {
+    font-size: 17px;   
+  }
+
+  .beerImg{
+    margin-left: 0px;
+  }
+
+  .description{
+    width: 325px;
+    height: 340px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+  .allTabs{
+    width: 95%;
+  }
+
+  .beerImg{
+    width: 200px;
+    height: 620px;
+  }
+  
+  .beerName{
+    font-size: 35px;
+  }
+
+  .react-tabs__tab {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+  p{
+    font-size: 16px;
+  }
+
+  .beerImg{
+    display: none;
+  }
+
+  .allTabs{
+    width: 95%;
+  }
+  
+  .beerName{
+    font-size: 30px;
+  }
+
+  .react-tabs__tab {
+    font-size: 12px;
+  }
+
+  .description{
+    font-size: 16px;
+    width: 285px;
+    height: 275px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: smaller;
+  }
+  
+
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+  p{
+    font-size: 14px;
+  }
+
+  .beerImg{
+    display: none;
+  }
+
+  .allTabs{
+    width: 95%;
+  }
+  
+  .beerName{
+    font-size: 24px;
+  }
+
+  .react-tabs__tab {
+    font-size: 10px;
+  }
+
+  .description{
+    font-size: 13px;
+    width: 245px;
+    height: 250px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: small;
+  }
+  
+}

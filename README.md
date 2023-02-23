@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Punk API - Tabs Wireframe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Beer API Screenshot](https://user-images.githubusercontent.com/113485644/220426526-07264f1c-36cb-48a9-be2e-7ca7dfdcee1b.jpg)
 
-## Available Scripts
+## About the project
 
-In the project directory, you can run:
+#### A React JS app about beers. [Check out the Live Demo Here] (add the github pages here)
 
-### `npm start`
+*The app was created by* **fetching** *Brewdog's Punk API and storing the object returned in a State.*
+```
+  let beersApi = 'https://api.punkapi.com/v2/beers?page=2&per_page=80'
+  const [data, setData] = useState([])
+  
+  function Beer (){
+    fetch(beersApi)
+    .then(response =>  response.json())
+    .then(jsonObject => { 
+      const beersObj = jsonObject
+      setData(beersObj)
+    })
+    .catch((error) => console.log("Error", error))    
+  }    
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  useEffect(Beer, []) 
+```   
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+If you are interested you can check it out PUNK API documentation [HERE!](https://punkapi.com/documentation/v2) 
 
-### `npm test`
+*The Tabs component was created by using* **'react-tabs'**, *which consists of 4 components working together.*
+*Here is a basic example of it:*
+```
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+export default () => (
+  <Tabs>
+    <TabList>
+      <Tab>Title 1</Tab>
+      <Tab>Title 2</Tab>
+    </TabList>
 
-### `npm run build`
+    <TabPanel>
+      <h2>Any content 1</h2>
+    </TabPanel>
+    <TabPanel>
+      <h2>Any content 2</h2>
+    </TabPanel>
+  </Tabs>
+);
+```
+[CLICK HERE](https://www.npmjs.com/package/react-tabs) for more information about React-Tab.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Build With
+![React badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![HTML badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Data Source 
+[PUNK API](https://punkapi.com/documentation/v2)       
+[React Tabs](https://www.npmjs.com/package/react-tabs)    
+[Badges](https://github.com/alexandresanlim/Badges4-README.md-Profile)    
