@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/api-ui-tabs/static/css/main.073c9b0a.css",
-    "main.js": "/api-ui-tabs/static/js/main.874c004e.js",
-    "static/js/787.f52e8286.chunk.js": "/api-ui-tabs/static/js/787.f52e8286.chunk.js",
-    "static/media/logo.svg": "/api-ui-tabs/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/api-ui-tabs/index.html",
-    "main.073c9b0a.css.map": "/api-ui-tabs/static/css/main.073c9b0a.css.map",
-    "main.874c004e.js.map": "/api-ui-tabs/static/js/main.874c004e.js.map",
-    "787.f52e8286.chunk.js.map": "/api-ui-tabs/static/js/787.f52e8286.chunk.js.map"
+    "main.css": "/tabs-api/static/css/main.26524dcd.css",
+    "main.js": "/tabs-api/static/js/main.9996f144.js",
+    "static/js/787.f52e8286.chunk.js": "/tabs-api/static/js/787.f52e8286.chunk.js",
+    "static/media/RRO-logo.png": "/tabs-api/static/media/RRO-logo.c7f4de2433d88f476fd4.png",
+    "index.html": "/tabs-api/index.html",
+    "main.26524dcd.css.map": "/tabs-api/static/css/main.26524dcd.css.map",
+    "main.9996f144.js.map": "/tabs-api/static/js/main.9996f144.js.map",
+    "787.f52e8286.chunk.js.map": "/tabs-api/static/js/787.f52e8286.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.874c004e.js"
+    "static/css/main.26524dcd.css",
+    "static/js/main.9996f144.js"
   ]
 }
