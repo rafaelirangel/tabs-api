@@ -6,13 +6,15 @@ const AllTabs = (props) => {
 
 return (
     <div className="allTabs">
+        {/* Tabs are third party library */}
+
         <Tabs>  {/*  DIV  */}
             <TabList className="navTabs">   {/*  UL  */}
                 {props.data.map((tab, id) =>
                 <Tab key={id}> {tab.name} </Tab> )} {/*  LI  */}
             </TabList>
           
-                {props.data.map((tab, id) =>
+                {props.data.map((tab, id) => 
                 <TabPanel  key={id}> 
                     <div className="img">
                         <img src={tab.image_url} className="beerImg" alt="Beer" />
@@ -45,7 +47,7 @@ return (
                                 </tbody>
                             </table>
                         </div>
-                        <p className="tip"><span>Food Pairing: </span>{tab.food_pairing}</p> 
+                        <p className="tip"><span>Food Pairing: </span>{tab.food_pairing.join(', ')}</p> 
                         <p className="tip"><span>Tips:</span> {tab.brewers_tips}</p> 
                     </div>
                 </TabPanel> 
