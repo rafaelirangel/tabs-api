@@ -4,7 +4,7 @@
 
 ## About the project
 
-#### A React JS app about beers. [Check out the Live Demo Here] (add the github pages here)
+#### A React JS app about beers. [Check out the Live Demo Here](https://rafaelirangel.github.io/tabs-api/)
 
 *The app was created by* **fetching** *Brewdog's Punk API and storing the object returned in a State.*
 ```
