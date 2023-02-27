@@ -1,6 +1,7 @@
 # Punk API - Tabs Wireframe
 
-![Beer API Screenshot](https://user-images.githubusercontent.com/113485644/220426526-07264f1c-36cb-48a9-be2e-7ca7dfdcee1b.jpg)
+![BreeDogs beer](https://user-images.githubusercontent.com/113485644/221651640-bae24a45-4f66-406a-837a-ac088980ca8d.jpg)
+
 
 ## About the project
 
