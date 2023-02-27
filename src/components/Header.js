@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <div>
-            <header className='header'>PUNK API - Tabs Wireframe</header>
+            <header className='header'>BrewDog’s Beer - Tabs Wireframe</header>
         </div>
     )
  }
